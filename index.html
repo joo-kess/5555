@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1513"><meta name="description" content="مساحة مشتركة لمتابعة الصلاة والتنافس الودي بين يوسف ولجين">
+  <title>وِرد | منافسة يوسف ولجين</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="#"><span class="brand-mark">و</span><span>وِرد<span class="brand-dot">.</span><small>مساحة خير مشتركة</small></span></a><div class="header-meta"><span class="sync-indicator" id="connection"><i></i><span>جارٍ التحقق من الاتصال</span></span><span class="date-pill" id="todayLabel"></span></div></header>
+    <section class="intro"><div class="eyebrow"><span></span> خُطوة صغيرة كل يوم</div><h1>نتسابق إلى <em>الخير.</em></h1><p>كل صلاة خطوة، وكل يوم نقترب أكثر. سجّل وِردك وشجّع بعض.</p></section>
+    <section class="score-grid" aria-label="نتائج المسابقة">
+      <article class="player-card y-card" id="card-yousef"><div class="card-top"><div class="avatar y-avatar">ي<span class="avatar-spark">✳</span></div><div class="player-meta"><span class="player-label">المتسابق الأول</span><h2>يوسف</h2></div><div class="rank-badge" id="rankY">#١</div></div><div class="score-line"><strong id="totalY">٠</strong><span>نقطة</span><span class="score-caption">الرصيد الكلي</span></div><div class="flame-track"><span class="flame-icon">♨</span><div class="track"><span id="barY"></span></div><span class="track-label" id="weekY">٠ هذا الأسبوع</span></div><div class="period-row"><div><small>هذا الشهر</small><b id="monthY">٠</b></div><div><small>هذا العام</small><b id="yearY">٠</b></div><div><small>أيام متتالية</small><b id="streakY">٠</b></div></div></article>
+      <article class="player-card l-card" id="card-lujain"><div class="card-top"><div class="avatar l-avatar">ل<span class="avatar-spark">✳</span></div><div class="player-meta"><span class="player-label">المتسابقة الثانية</span><h2>لجين</h2></div><div class="rank-badge" id="rankL">#٢</div></div><div class="score-line"><strong id="totalL">٠</strong><span>نقطة</span><span class="score-caption">الرصيد الكلي</span></div><div class="flame-track"><span class="flame-icon">♨</span><div class="track"><span id="barL"></span></div><span class="track-label" id="weekL">٠ هذا الأسبوع</span></div><div class="period-row"><div><small>هذا الشهر</small><b id="monthL">٠</b></div><div><small>هذا العام</small><b id="yearL">٠</b></div><div><small>أيام متتالية</small><b id="streakL">٠</b></div></div></article>
+    </section>
+    <section class="daily-panel"><div class="section-heading"><div><span class="section-kicker">وِرد اليوم</span><h2>صلوات اليوم</h2></div><span class="daily-date" id="gregDate"></span></div><div class="player-tabs" role="tablist"><button class="player-tab active" data-player="yousef" role="tab" aria-selected="true"><span class="tab-dot y-dot"></span>يوسف</button><button class="player-tab" data-player="lujain" role="tab" aria-selected="false"><span class="tab-dot l-dot"></span>لجين</button></div><div class="daily-progress"><div><span id="progressText">٠ من ٥ صلوات</span><span id="progressHint">ابدأ يومك بخطوة</span></div><div class="progress-bar"><span id="dailyBar"></span></div></div><div class="prayer-list" id="prayerList"></div><div class="complete-bonus" id="completeBonus"><span class="bonus-star">✦</span><div><b>مكافأة إتمام اليوم</b><small>عند إكمال الصلوات الخمس</small></div><strong>+٥</strong><span class="bonus-status" id="bonusStatus">مقفولة</span></div>
+    <div class="extra-heading"><span>نوافل وقيام</span><small>كل عمل إضافي يمنح ٥ نقاط</small></div><div class="extra-grid" id="extraGrid"></div></section>
+    <section class="activity-panel"><div class="section-heading"><div><span class="section-kicker">خطواتكم الأخيرة</span><h2>سجل المنافسة</h2></div><span class="live-tag"><i></i> مباشر</span></div><div id="activityList" class="activity-list"></div></section>
+    <footer><span>وِرد <b>·</b> المنافسة في الخير أجمل</span><span>اللهم أعنّا على ذكرك وشكرك وحسن عبادتك</span></footer>
+  </main><div class="toast" id="toast" role="status"></div>
+  <script type="module" src="app.js"></script>
+</body></html>
