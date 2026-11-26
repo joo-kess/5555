@@ -2,7 +2,7 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
     function playerForUid(uid) {
-      return uid == 'SET_YOUSEF_UID' ? 'yousef'
+      return uid == 'BxuYNBkmwmP7wa7298P2vNd3djz2' ? 'yousef'
         : uid == 'SET_LUJAIN_UID' ? 'lujain'
         : null;
     }

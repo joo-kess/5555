@@ -6,5 +6,5 @@ export default {
   projectId: 'wird-yusuf-lujain',
   appId: '1:477871489345:web:fdce05b1569de8e24ba1c0',
   // Firebase Auth UIDs for the only two players. Fill after each signs in once.
-  playerUids: { yousef: '', lujain: '' }
+  playerUids: { yousef: 'BxuYNBkmwmP7wa7298P2vNd3djz2', lujain: '' }
 };
